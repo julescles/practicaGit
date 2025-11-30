@@ -28,13 +28,95 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtTelegrama = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.btnCalcular = new System.Windows.Forms.Button();
+            this.chkUrgente = new System.Windows.Forms.CheckBox();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(58, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Texto:";
+            // 
+            // txtTelegrama
+            // 
+            this.txtTelegrama.Location = new System.Drawing.Point(16, 41);
+            this.txtTelegrama.Multiline = true;
+            this.txtTelegrama.Name = "txtTelegrama";
+            this.txtTelegrama.Size = new System.Drawing.Size(439, 138);
+            this.txtTelegrama.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 226);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(61, 20);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Coste:";
+            // 
+            // txtPrecio
+            // 
+            this.txtPrecio.Location = new System.Drawing.Point(79, 228);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(100, 20);
+            this.txtPrecio.TabIndex = 3;
+            // 
+            // btnCalcular
+            // 
+            this.btnCalcular.Location = new System.Drawing.Point(325, 219);
+            this.btnCalcular.Name = "btnCalcular";
+            this.btnCalcular.Size = new System.Drawing.Size(130, 36);
+            this.btnCalcular.TabIndex = 4;
+            this.btnCalcular.Text = "Calcular";
+            this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
+            // 
+            // chkUrgente
+            // 
+            this.chkUrgente.AutoSize = true;
+            this.chkUrgente.Location = new System.Drawing.Point(16, 196);
+            this.chkUrgente.Name = "chkUrgente";
+            this.chkUrgente.Size = new System.Drawing.Size(73, 17);
+            this.chkUrgente.TabIndex = 5;
+            this.chkUrgente.Text = "Urgente ?";
+            this.chkUrgente.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(507, 284);
+            this.Controls.Add(this.chkUrgente);
+            this.Controls.Add(this.btnCalcular);
+            this.Controls.Add(this.txtPrecio);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtTelegrama);
+            this.Controls.Add(this.label1);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtTelegrama;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtPrecio;
+        private System.Windows.Forms.Button btnCalcular;
+        private System.Windows.Forms.CheckBox chkUrgente;
     }
 }
 
