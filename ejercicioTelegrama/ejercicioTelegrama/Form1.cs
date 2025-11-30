@@ -45,7 +45,7 @@ namespace ejercicioTelegrama
                 }
             }
             else
-            //Si el telegrama es urgente
+            //Si el telegrama es urgentee
             {
                 if (tipoTelegrama == 'u')
                 {
